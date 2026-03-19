@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-50 font-sans;
+    background-image: url('/images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-3xl p-8;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+
+  .glass-navbar {
+    @apply sticky top-4 z-50 bg-slate-950/40 backdrop-blur-md border border-white/5 rounded-full mx-auto px-6 py-3 max-w-4xl transition-all duration-300;
+  }
+
+  .liquid-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 animate-gradient-x;
+  }
+
+  .btn-liquid {
+    @apply px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95;
+    background: linear-gradient(90deg, #22d3ee, #3b82f6, #6366f1);
+    background-size: 200% 100%;
+    animation: gradient-flow 3s linear infinite;
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% 100%;
+  animation: gradient-x 6s ease infinite;
+}

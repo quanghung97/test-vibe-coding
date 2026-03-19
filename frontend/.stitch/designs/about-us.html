@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Liquid Ether</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-container": "#3c0057",
+                        "on-tertiary": "#49000a",
+                        "on-secondary-container": "#eefaff",
+                        "on-secondary": "#004352",
+                        "surface-container-highest": "#192540",
+                        "on-background": "#dee5ff",
+                        "inverse-primary": "#8938b2",
+                        "secondary-container": "#00677d",
+                        "on-secondary-fixed-variant": "#00586c",
+                        "on-surface": "#dee5ff",
+                        "surface-container": "#0f1930",
+                        "surface-tint": "#db90ff",
+                        "primary": "#db90ff",
+                        "tertiary-fixed-dim": "#ff7a7c",
+                        "on-primary-fixed": "#000000",
+                        "on-primary-fixed-variant": "#4a006b",
+                        "tertiary-fixed": "#ff9191",
+                        "error-dim": "#d73357",
+                        "surface-container-high": "#141f38",
+                        "on-primary": "#4e0070",
+                        "background": "#060e20",
+                        "inverse-on-surface": "#4d556b",
+                        "primary-container": "#d17dfa",
+                        "surface-container-lowest": "#000000",
+                        "surface-variant": "#192540",
+                        "outline-variant": "#40485d",
+                        "surface-bright": "#1f2b49",
+                        "secondary-dim": "#16c3ea",
+                        "on-tertiary-container": "#290003",
+                        "secondary-fixed": "#79dfff",
+                        "on-error-container": "#ffb2b9",
+                        "secondary-fixed-dim": "#3bd4fb",
+                        "inverse-surface": "#faf8ff",
+                        "on-error": "#490013",
+                        "on-surface-variant": "#a3aac4",
+                        "error": "#ff6e84",
+                        "surface": "#060e20",
+                        "tertiary-container": "#fd545e",
+                        "outline": "#6d758c",
+                        "primary-fixed-dim": "#c370ec",
+                        "tertiary-dim": "#ff7073",
+                        "secondary": "#36d1f9",
+                        "on-tertiary-fixed-variant": "#790017",
+                        "surface-dim": "#060e20",
+                        "on-tertiary-fixed": "#3a0006",
+                        "primary-dim": "#ce7bf8",
+                        "tertiary": "#ff7073",
+                        "error-container": "#a70138",
+                        "surface-container-low": "#091328",
+                        "primary-fixed": "#d17dfa",
+                        "on-secondary-fixed": "#003a47"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .liquid-orb {
+            filter: blur(80px);
+            opacity: 0.4;
+            pointer-events: none;
+            position: absolute;
+            z-index: 0;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            background: rgba(25, 37, 64, 0.4);
+            border: 1px solid rgba(64, 72, 93, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface-container-low/60 backdrop-blur-xl border-b border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-2xl font-black text-white tracking-tighter font-headline">Liquid Ether</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-bold tracking-tight text-white/70 hover:text-white transition-colors" href="#">Home</a>
+<a class="font-headline font-bold tracking-tight text-white/70 hover:text-white transition-colors" href="#">Services</a>
+<a class="font-headline font-bold tracking-tight text-[#db90ff] border-b-2 border-[#db90ff] pb-1" href="#">About</a>
+<a class="font-headline font-bold tracking-tight text-white/70 hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold px-6 py-2 rounded-lg active:scale-95 transition-all duration-300">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="relative pt-32 pb-24">
+<!-- Background Liquid Orbs -->
+<div class="liquid-orb w-[500px] h-[500px] bg-primary top-[-100px] left-[-100px] rounded-full"></div>
+<div class="liquid-orb w-[600px] h-[600px] bg-secondary bottom-[20%] right-[-200px] rounded-full"></div>
+<div class="liquid-orb w-[400px] h-[400px] bg-tertiary top-[40%] left-[20%] rounded-full opacity-20"></div>
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-32 relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-secondary font-headline font-bold tracking-widest uppercase text-sm mb-4 block">Our Origin</span>
+<h1 class="text-7xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tighter mb-8">
+                        Crafting Digital <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Atmospheres.</span>
+</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
+                        At Liquid Ether, we believe the digital realm should feel as immersive as a physical sanctuary. We don't build interfaces; we architect experiences that flow with the natural rhythm of human intuition.
+                    </p>
+<div class="flex gap-4">
+<div class="glass-panel px-6 py-4 rounded-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<div>
+<p class="text-white font-bold">12+ Years</p>
+<p class="text-on-surface-variant text-sm">Industry Fluidity</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-xl overflow-hidden glass-panel p-4 rotate-3 transform transition-transform hover:rotate-0 duration-700">
+<div class="w-full h-full rounded-lg overflow-hidden bg-surface-container-highest relative">
+<img alt="Abstract fluid background" class="w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="Abstract purple and blue fluid digital art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhXhKJtO_2DgwxtWRzHayOcgI-M1Acs1QbOEcECxDX6qnjHjTtwaVIHbEqR_DzjELE9LXnGDxHBWBBYQrYIsU65ZdVWQjkBHEcXEuHMjINmQ-t6xC4HUaWDPZfxMoXd1YwKa2_dNel0asK09F6VUfvabhZOLhivGEu0yTV-3fpoGWbrVz_r3yaDE10JXYS9Kih-ej5wfX6UCpOdUPbe_STxHuwIDYZfYBAEVxMILoW4ur4dMzGk2Poqu7vHrzUmd-TuorkA6JOJpI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-transparent to-transparent"></div>
+</div>
+</div>
+<!-- Asymmetric Floating Element -->
+<div class="absolute -bottom-8 -left-8 glass-panel p-8 rounded-xl max-w-xs shadow-2xl z-20">
+<p class="italic text-lg text-white mb-2">"The future of design isn't flat; it's fluid."</p>
+<p class="text-sm font-bold text-secondary">— Elara Vance, Founder</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision Bento Grid -->
+<section class="max-w-7xl mx-auto px-8 mb-32 relative z-10">
+<h2 class="text-4xl font-headline font-extrabold text-on-surface mb-16 text-center">Core Philosophies</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[600px]">
+<!-- Large Feature -->
+<div class="md:col-span-2 glass-panel p-10 rounded-xl flex flex-col justify-end relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-primary text-6xl opacity-20 group-hover:opacity-100 transition-opacity duration-500">waves</span>
+</div>
+<h3 class="text-3xl font-headline font-bold text-white mb-4">Adaptive Ecosystems</h3>
+<p class="text-on-surface-variant text-lg max-w-lg">
+                        We create systems that react and adapt to user behavior in real-time. Like water filling a vessel, our designs fit perfectly into any context.
+                    </p>
+</div>
+<!-- Small Vertical -->
+<div class="glass-panel p-10 rounded-xl flex flex-col gap-6 bg-gradient-to-br from-surface-container-highest to-surface-container-low">
+<div class="h-16 w-16 bg-secondary/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">visibility</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-white">Infinite Depth</h3>
+<p class="text-on-surface-variant">
+                        Using light sources and tonal stacking to create a UI that lives beyond the glass screen.
+                    </p>
+</div>
+<!-- Small Horizontal Bottom -->
+<div class="glass-panel p-10 rounded-xl flex items-center gap-8">
+<span class="material-symbols-outlined text-tertiary text-4xl">energy_savings_leaf</span>
+<div>
+<h3 class="text-xl font-headline font-bold text-white">Sustainable Tech</h3>
+<p class="text-on-surface-variant text-sm">Efficient code architectures that minimize digital footprint.</p>
+</div>
+</div>
+<!-- Interactive Stats -->
+<div class="md:col-span-2 glass-panel p-10 rounded-xl flex flex-col md:flex-row justify-between items-center bg-surface-container-high/40">
+<div class="text-center md:text-left mb-6 md:mb-0">
+<span class="text-5xl font-headline font-black text-primary">400+</span>
+<p class="text-on-surface-variant uppercase tracking-widest text-xs mt-2">Projects Launched</p>
+</div>
+<div class="h-px w-full md:h-12 md:w-px bg-outline-variant/30"></div>
+<div class="text-center mb-6 md:mb-0">
+<span class="text-5xl font-headline font-black text-secondary">98%</span>
+<p class="text-on-surface-variant uppercase tracking-widest text-xs mt-2">Client Retainment</p>
+</div>
+<div class="h-px w-full md:h-12 md:w-px bg-outline-variant/30"></div>
+<div class="text-center">
+<span class="text-5xl font-headline font-black text-tertiary">14</span>
+<p class="text-on-surface-variant uppercase tracking-widest text-xs mt-2">Global Awards</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team / Culture -->
+<section class="max-w-7xl mx-auto px-8 mb-32 relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-5xl font-headline font-extrabold text-white mb-6 leading-tight">Driven by Human Curiosity</h2>
+<p class="text-on-surface-variant text-lg">Our diverse collective of thinkers, makers, and dreamers work remotely from 12 different time zones, unified by a shared vision of digital excellence.</p>
+</div>
+<button class="border border-outline-variant/30 text-white px-8 py-3 rounded-full hover:bg-white/5 transition-colors font-headline font-bold">
+                    Join the Collective
+                </button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-[3/4] rounded-xl overflow-hidden glass-panel relative group">
+<img alt="Team member" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Professional woman looking confidently at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2zkAVSHrz0ODqEbyYzRwz6Q__iAI4pAhtHMEzdK-nkWPgGLo8N2_HN5OukEFe_CzWfOjyBHC9Kn1zRGKc9VrQCcZsB_bIkhsogrc9KHN5csj21rvzm92fUk022Uz6D26yEz-jzDF_XawaaIza0LJoKgrOmtZg3hwg9JibOR53Ak_hgFn8UrK5BNbm0vnBiHJGTHnWf5FGkoJ7XbilaHnDTxzz6SGTamuAeuP_GCvMI1ghZD2Uw_AzHzxAzXIi08ajePILe33R_MM"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-surface-container-highest to-transparent">
+<p class="text-white font-bold">Sarah Chen</p>
+<p class="text-secondary text-xs uppercase tracking-tighter">Design Director</p>
+</div>
+</div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden glass-panel relative group mt-8">
+<img alt="Team member" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Man smiling in a creative studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3fX7RoAWYaHiJrDYooElKmr_6ASfvMWaHJwnq8ourQu1jJ-lWF-hwOiWrz3ymh3uI-iruYjMGGaSx9t5H3TF9l2JsZok-hkxyJNpJ-Je5Rq0uTA_wNgg0PciMmWyr0tPpxwZXU5XZsGqJhPKuiKYtokVavMmhT-9b5LBPaU9Q_ne2g0FaaUapb0Ls5BXxeQSpsUZA4_gL55-TmExkwqTK107w4dFfthCT-sjVNUFSs4CBzP0QqKAqrXNkE3o0LqcHsfOr9JRtms"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-surface-container-highest to-transparent">
+<p class="text-white font-bold">Marcus Thorne</p>
+<p class="text-secondary text-xs uppercase tracking-tighter">Lead Architect</p>
+</div>
+</div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden glass-panel relative group">
+<img alt="Team member" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Creative woman in a modern workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByX5o7k5kk3EEsbdbn-xFORyR7AhjB-MwLpdKZ96lcWaqnDz2nl4uTRhoj7MGWvcAzl4IgX_5tKNsdNfBQiTZyVWvzZBul3-Brms7Hz3t28gQ_TVkQ_0maPkFDgGMIhocTtwHvMWlA47fVUFDmTPoOlBSW229BgQIJ1rLXBmVugc7kRY1wFzV325bw32c8jZGXcR7t-z7C1bfvCuSGuQWu9zd-tixh7ZpX5ELGkZh6lB-mZdbtUzOGsqAL-8824y-eGMcdiXgG-_Y"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-surface-container-highest to-transparent">
+<p class="text-white font-bold">Aria Voss</p>
+<p class="text-secondary text-xs uppercase tracking-tighter">Liquid Motion</p>
+</div>
+</div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden glass-panel relative group mt-8">
+<img alt="Team member" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Professional man in a minimal office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_u6f-7E-D_g3xm8GAp8IJ4TeI24mNqAyAFq63YrxM1x8veNZ6JL1E3EfxNraOWEBG9Edn6lO15lscRp7ReFALymcT7vLWIsoPrEsxYq0ePq17StAufABzMkx4tAPbFtTVYaiYhHmUixEyK2IxV9P2mVic8lNSW0rz0QF-jVhV0Tveu33BI8sw4tbxVSn30pXCCgc6LL4d1aLMhVn4hwUicaNAPrnHsVpNuZp3jjuBH9QYsegwOoGjo-Oc3O9YW33X_hbRmMdXpl4"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-surface-container-highest to-transparent">
+<p class="text-white font-bold">David Lau</p>
+<p class="text-secondary text-xs uppercase tracking-tighter">Tech Strategy</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision CTA -->
+<section class="max-w-5xl mx-auto px-8 relative z-10">
+<div class="glass-panel p-16 rounded-xl text-center relative overflow-hidden">
+<div class="liquid-orb w-[300px] h-[300px] bg-tertiary -top-[150px] -right-[150px] opacity-20"></div>
+<h2 class="text-5xl font-headline font-extrabold text-white mb-8">Ready to evolve?</h2>
+<p class="text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto">Step into the sanctuary. Let's build something that doesn't just function, but breathes.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold px-10 py-4 rounded-lg text-lg shadow-lg hover:shadow-primary/20 transition-all">
+                        Initiate Project
+                    </button>
+<button class="glass-panel text-white px-10 py-4 rounded-lg text-lg border border-outline-variant/20 hover:bg-white/5 transition-all">
+                        View Showreel
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#060e20] w-full py-12 px-8 relative z-20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-white font-headline">Liquid Ether</div>
+<div class="flex gap-8">
+<a class="text-[#a3aac4] text-sm hover:text-white transition-colors font-body" href="#">Privacy Policy</a>
+<a class="text-[#a3aac4] text-sm hover:text-white transition-colors font-body" href="#">Terms of Service</a>
+<a class="text-[#a3aac4] text-sm hover:text-white transition-colors font-body" href="#">Cookies</a>
+</div>
+<div class="text-[#a3aac4] text-sm font-body">
+                © 2024 Liquid Ether. The Fluid Sanctuary.
+            </div>
+</div>
+</footer>
+</body></html>
