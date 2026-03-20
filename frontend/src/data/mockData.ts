@@ -78,3 +78,54 @@ export const aboutUsData = {
     description: "Step into the sanctuary. Let's build something that doesn't just function, but breathes."
   }
 };
+
+export const contactData = {
+  hero: {
+    badge: "CONNECT",
+    title: {
+      part1: "Step into the ",
+      highlight: "Fluid Sanctuary."
+    },
+    description: "We're here to help you navigate the ether. Reach out and let's build something ethereal together."
+  },
+  details: [
+    {
+      label: "Email Us",
+      value: "hello@liquidether.io",
+      icon: "Mail"
+    },
+    {
+      label: "Our Studio",
+      value: "Nocturnal District, Suite 404",
+      icon: "MapPin"
+    }
+  ],
+  socials: [
+    { icon: "AtSign", color: "primary", href: "#" },
+    { icon: "Globe", color: "secondary", href: "#" },
+    { icon: "Share2", color: "tertiary", href: "#" }
+  ],
+  form: {
+    inputs: [
+      { label: "Full Name", placeholder: "John Ether", type: "text" },
+      { label: "Email Address", placeholder: "john@sanctuary.io", type: "email" }
+    ],
+    subject: {
+      label: "Subject",
+      options: ["General Inquiry", "New Project", "Partnership", "Support"]
+    },
+    message: {
+      label: "Your Message",
+      placeholder: "Tell us about your vision..."
+    },
+    button: {
+      text: "Send Transmission",
+      icon: "Send"
+    }
+  },
+  decorationImage: {
+    url: "https://lh3.googleusercontent.com/aida-public/AB6AXuCnNYWE5HahbB12uQIT33F6_Sq_WmioNX3iSgF5vfkMmRxNePVvSkDFvPD-hILGfkyS-o3Y4fNlL1oxfRt9IWxJGH6wcb-xlCiBMuHN2vUSw0jlyybUe0K-fY7n-N-nInhL4_SbSatdSU90pZa4ng3mRzQhlpMnQpwKCk1oEFobdNB_x03Hr3siQYC9wvVHRq9FbG4OoxWGna7jfWg-1RwriaXlPXd9uRlTBUm4wp-Bn5cXWs5h2XTu6TKgI7TKJ5PC48xreCBjP74",
+    alt: "Abstract fluid texture"
+  }
+};
+

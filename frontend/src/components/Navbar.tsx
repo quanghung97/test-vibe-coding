@@ -1,6 +1,6 @@
 interface NavbarProps {
-  currentPage: 'home' | 'about';
-  onPageChange: (page: 'home' | 'about') => void;
+  currentPage: 'home' | 'about' | 'contact';
+  onPageChange: (page: 'home' | 'about' | 'contact') => void;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
@@ -23,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
           ].map((item) => (
             <button 
               key={item.id} 
-              onClick={() => (item.id === 'home' || item.id === 'about') && onPageChange(item.id as any)}
+              onClick={() => (item.id === 'home' || item.id === 'about' || item.id === 'contact') && onPageChange(item.id as any)}
               className={`text-[13px] font-bold uppercase tracking-widest transition-all hover:text-white relative pb-1 ${
                 currentPage === item.id ? 'text-primary' : 'text-on-surface/50'
               }`}
